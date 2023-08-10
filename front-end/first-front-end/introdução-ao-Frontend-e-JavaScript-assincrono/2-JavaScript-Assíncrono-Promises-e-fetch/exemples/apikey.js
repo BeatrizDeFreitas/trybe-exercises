@@ -1,1 +1,5 @@
-const api = '';
+const api = {
+    key: '',
+}
+
+export default api;

@@ -1,3 +1,6 @@
+import { api } from './apikey.js';
+
+
 const bookId = "ISBN:0451526538"; // ID do livro, você pode substituir por outro ID
 
 // Fazendo uma solicitação para a API do Google Books para buscar informações sobre o livro
