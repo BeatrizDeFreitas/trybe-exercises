@@ -1,0 +1,9 @@
+Na programação, operações síncronas acontecem uma após a outra, e cada operação espera a anterior terminar antes de começar. Isso às vezes pode causar atrasos, especialmente ao lidar com tarefas que podem levar algum tempo, como carregar dados de um servidor ou lidar com a entrada do usuário.
+
+Operações assíncronas, por outro lado, permitem que o programa continue rodando enquanto aguarda a conclusão de certas tarefas. Isso é muito útil no desenvolvimento web, pois permite que a interface do usuário (UI) permaneça responsiva mesmo ao realizar tarefas que podem levar algum tempo.
+
+Aqui está uma maneira simples de pensar nisso:
+
+Imagine que você está em um restaurante e quer pedir comida. Em um mundo síncrono, você faria o pedido, esperaria a comida ser preparada e só então poderia comer. Em um mundo assíncrono, você pode fazer o pedido e depois conversar com seus amigos enquanto a comida está sendo preparada. Você não precisa ficar sentado olhando para a cozinha até que sua comida esteja pronta.
+
+No desenvolvimento de front-end, código assíncrono é comumente usado para coisas como buscar dados de um servidor (requisições AJAX), lidar com animações ou executar tarefas em segundo plano sem congelar a interface do usuário. JavaScript, a linguagem principal para desenvolvimento de front-end, possui mecanismos incorporados para trabalhar com código assíncrono, como Promises e async/await.
