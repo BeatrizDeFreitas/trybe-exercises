@@ -1,0 +1,18 @@
+const bookId = "ISBN:0451526538"; // ID do livro, você pode substituir por outro ID
+
+// Fazendo uma solicitação para a API do Google Books para buscar informações sobre o livro
+fetch(`https://www.googleapis.com/books/v1/volumes/${bookId}`)
+  .then(response => {
+    if (!response.ok) {
+      throw new Error('Erro ao buscar o livro');
+    }
+    return response.json();
+  })
+  .then(bookData => {
+    console.log('Informações do livro:', bookData);
+    const bookTitle = bookData.volumeInfo.title;
+    console.log('Título do livro:', bookTitle);
+  })
+  .catch(error => {
+    console.error('Erro:', error);
+  });
